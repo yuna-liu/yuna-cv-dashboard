@@ -43,3 +43,56 @@ bash
 
 python insert_data.py
 
+Step 5:✅ Best way to fix the credentials for using Neo4j on Streamlit Cloud:
+Use Streamlit Secrets Management to securely pass credentials in deployment.
+
+Step 5.1: Move your env variables into .streamlit/secrets.toml (for local development)
+Create a file:
+
+plaintext
+Copy
+Edit
+.streamlit/secrets.toml
+With this content:
+
+toml
+Copy
+Edit
+[neo4j]
+uri = "bolt://<host>:<port>"
+user = "your_neo4j_username"
+password = "your_neo4j_password"
+⚠️ Make sure .streamlit/secrets.toml is in .gitignore too to avoid pushing secrets to GitHub accidentally.
+
+Step 5.2: Update your code to read from st.secrets:
+python
+Copy
+Edit
+import streamlit as st
+from neo4j import GraphDatabase
+
+NEO4J_URI = st.secrets["neo4j"]["uri"]
+NEO4J_USER = st.secrets["neo4j"]["user"]
+NEO4J_PASSWORD = st.secrets["neo4j"]["password"]
+
+driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+Step 3: On Streamlit Cloud: set the same values in "Secrets" UI
+Go to your app on Streamlit Cloud.
+
+Click "Manage app" → "Settings" → "Secrets".
+
+Paste the same TOML content:
+
+[neo4j]
+uri = "bolt://<host>:<port>"
+user = "your_neo4j_username"
+password = "your_neo4j_password"
+🧠 Why this works:
+Streamlit automatically loads secrets from:
+
+.streamlit/secrets.toml during local dev
+
+the cloud "Secrets" settings during deployment
+
+This is the recommended secure way to handle credentials with Streamlit.
+
