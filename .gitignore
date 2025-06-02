@@ -1,3 +1,4 @@
 # Ignore Python cache and environment files
 
 .env
+.streamlit/secrets.toml
