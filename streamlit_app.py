@@ -1,5 +1,9 @@
 import streamlit as st
 
+st.set_page_config(
+    page_title="Yuna Liu CV Dashboard",
+    page_icon="👋",
+)
 
 # Enlarge fonts globally using CSS
 st.markdown(
@@ -24,10 +28,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.set_page_config(
-    page_title="Yuna Liu CV Dashboard",
-    page_icon="👋",
-)
 
 st.write("# Meet Yuna Liu – A Structured Mind for an Unstructured World! 👋")
 
