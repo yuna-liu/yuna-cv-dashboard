@@ -19,6 +19,20 @@ driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 st.set_page_config(page_title="Yuna's work experince", layout="wide")
 st.title("💼 Yuna's work experince")
 
+# Enlarge fonts globally on this page (optional)
+st.markdown(
+    """
+    <style>
+    body, p, li {
+        font-size: 18px !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 # Add markdown explanation
 st.markdown("""

@@ -4,6 +4,22 @@ st.set_page_config(page_title="Cortex Analyst Demo", page_icon="📊")
 
 st.title("❄️ Snowflake Streamlit AI-Powered Sales Insights Demo")
 
+# Enlarge fonts globally on this page (optional)
+st.markdown(
+    """
+    <style>
+    body, p, li {
+        font-size: 18px !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 st.markdown("""
 This short video demonstrates how we at **Volvo Cars Sales Dashboard team** are enabling intuitive, AI-driven data exploration using **Cortex Analyst** — Snowflake’s integrated LLM-powered analytics tool.
 

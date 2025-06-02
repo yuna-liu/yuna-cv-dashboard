@@ -10,6 +10,21 @@ st.write(
     "Dive into my educational story by filtering degrees and years. Each step reflects milestones that shaped my skills and expertise."
 )
 
+# Enlarge fonts globally on this page (optional)
+st.markdown(
+    """
+    <style>
+    body, p, li {
+        font-size: 18px !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 # Function to encode logo image to base64
 def encode_image_to_base64(path):
     with open(path, "rb") as image_file:

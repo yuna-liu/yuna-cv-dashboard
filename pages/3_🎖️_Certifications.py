@@ -5,6 +5,23 @@ import altair as alt
 st.set_page_config(page_title="Certifications", page_icon="📜")
 
 st.title("🎖️ Certifications")
+
+# Enlarge fonts globally on this page (optional)
+st.markdown(
+    """
+    <style>
+    body, p, li {
+        font-size: 18px !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 st.markdown("""
 This page presents an overview of professional certifications.
 
