@@ -1,13 +1,37 @@
 import streamlit as st
 
+
+# Enlarge fonts globally using CSS
+st.markdown(
+    """
+    <style>
+    /* Make all normal text bigger */
+    body, p, li {
+        font-size: 20px !important;
+    }
+    /* Make headers bigger */
+    h1 {
+        font-size: 3rem !important;
+    }
+    h2 {
+        font-size: 2.5rem !important;
+    }
+    h3 {
+        font-size: 2rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.set_page_config(
-    page_title="Hello",
+    page_title="Yuna Liu CV Dashboard",
     page_icon="👋",
 )
 
 st.write("# Meet Yuna Liu – A Structured Mind for an Unstructured World! 👋")
 
-st.sidebar.success("Select an aspect above.")
+st.sidebar.success("Select a page above.")
 
 st.markdown("""
 This dashboard consists of several pages, each highlighting an important aspect of my professional journey:
