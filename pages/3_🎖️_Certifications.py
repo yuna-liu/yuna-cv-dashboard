@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-st.set_page_config(page_title="Yuna's Certifications", page_icon="📜")
+st.set_page_config(page_title="Yuna's Certifications", page_icon="🎖️")
 
 st.title("🎖️ Yuna's Certifications")
 
@@ -46,8 +46,8 @@ df["Expiry Date"] = pd.to_datetime(df["Expiry Date"], format="%Y-%m", errors="co
 st.sidebar.markdown("## 🔍 Filter Options")
 st.sidebar.markdown("""
 Use the filters below to narrow down the certifications:
-- **Issuer**: Organization that granted the certificate.
-- **Area**: Skill or domain the certification belongs to.
+- **Issuer**
+- **Area**
 
 You can select multiple options or leave "All" to include everything.
 """)

@@ -4,7 +4,6 @@ import pydeck as pdk
 import base64
 
 st.set_page_config(page_title="Yuna's Education Journey", page_icon="🎓")
-st.title("🎓 Yuna's Education Journey")
 
 # Enlarge fonts globally on this page (optional)
 st.markdown(
