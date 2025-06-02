@@ -1,0 +1,22 @@
+# Core app requirements
+streamlit
+neo4j
+
+# Data handling
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Optional: For interaction with databases or APIs
+requests
+
+# Optional: If you use network graphs or Neo4j visualization
+networkx
+pyvis
+
+# Optional: For local development with .env files
+python-dotenv
