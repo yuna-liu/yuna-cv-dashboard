@@ -3,7 +3,7 @@ from streamlit_timeline import timeline
 import pandas as pd
 
 st.set_page_config(layout="wide")
-st.title("📚 Research Publications Timeline")
+st.title("📚 Yuna's Research Publications Timeline")
 
 # Enlarge fonts globally on this page (optional)
 st.markdown(
