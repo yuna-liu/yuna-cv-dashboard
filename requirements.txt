@@ -1,6 +1,7 @@
 # Core app requirements
 streamlit
 neo4j
+streamlit-timeline
 
 # Data handling
 pandas
