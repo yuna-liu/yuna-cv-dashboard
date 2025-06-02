@@ -1,4 +1,4 @@
-# my-cv-dashboard
+# yuna-cv-dashboard
 
 Here is my cv dashboard streamlit playground
 
@@ -66,8 +66,7 @@ password = "your_neo4j_password"
 
 Step 5.2: Update your code to read from st.secrets:
 python
-Copy
-Edit
+
 import streamlit as st
 from neo4j import GraphDatabase
 
