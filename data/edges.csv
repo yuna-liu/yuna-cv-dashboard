@@ -1,0 +1,38 @@
+source,target,relation
+Yuna,VolvoCars,worked at
+Yuna,CollectorBank,worked at
+Yuna,Umea,studied at
+Yuna,UnivWest,worked at
+
+Yuna,DataEng2023,had role
+Yuna,GenAI2024,had role
+Yuna,InternVolvo2023,had role
+Yuna,InternCollector2022,had role
+Yuna,TeacherUmea,had role
+Yuna,ResearcherWest,had role
+
+DataEng2023,VolvoCars,project at
+GenAI2024,VolvoCars,project at
+InternVolvo2023,VolvoCars,project at
+InternCollector2022,CollectorBank,project at
+
+DataEng2023,SQL,used
+DataEng2023,Azure,used
+DataEng2023,PowerBI,used
+DataEng2023,Snowflake,used
+DataEng2023,Matillion,used
+
+GenAI2024,Python,used
+GenAI2024,Streamlit,used
+GenAI2024,ML,used
+GenAI2024,Snowflake,used
+
+InternVolvo2023,Azure,used
+InternVolvo2023,Python,used
+InternVolvo2023,PowerBI,used
+InternVolvo2023,SQL,used
+
+InternCollector2022,Databricks,used
+InternCollector2022,Python,used
+InternCollector2022,ML,used
+InternCollector2022,SQL,used
