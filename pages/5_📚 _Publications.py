@@ -5,20 +5,6 @@ import pandas as pd
 st.set_page_config(layout="wide", page_icon="📚")
 st.title("📚 Yuna's Research Publications Timeline")
 
-# Enlarge fonts globally on this page (optional)
-st.markdown(
-    """
-    <style>
-    body, p, li {
-        font-size: 18px !important;
-    }
-    h1 {
-        font-size: 2.5rem !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
 
 # Add link to full Google Scholar profile
 st.markdown(

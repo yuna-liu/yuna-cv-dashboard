@@ -23,15 +23,13 @@ st.markdown(
 
 
 st.markdown("""
-This page presents an overview of professional certifications.
+This page presents an overview of professional certifications. Use this dashboard to reflect on my learning progress and skill development.
 
 You can:
 - View all my certifications in a table.
 - Filter by **issuer** or **area** using the sidebar.
 - Explore a **bar chart** summarizing the count of certifications by issuer and area.
 - Watch an **animated timeline** showing how certifications accumulated over time.
-
-Use this dashboard to reflect on my learning progress and skill development.
 """)
 
 
