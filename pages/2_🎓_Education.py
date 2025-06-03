@@ -3,7 +3,8 @@ import pandas as pd
 import pydeck as pdk
 import base64
 
-st.set_page_config(page_title="Yuna's Education Journey", page_icon="🎓")
+st.set_page_config(page_title="🎓 Yuna's Education Journey", page_icon="🎓")
+st.title("🎓 Yuna's Education Journey")
 
 # Enlarge fonts globally on this page (optional)
 st.markdown(
@@ -20,7 +21,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown("# 🎓 Education Journey")
+
 st.sidebar.header("Filter Education")
 st.write(
     "Dive into my educational story by filtering degrees and years. Each step reflects milestones that shaped my skills and expertise."

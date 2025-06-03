@@ -3,6 +3,7 @@ import pandas as pd
 import altair as alt
 
 st.set_page_config(layout="wide", page_title="🎖️ Yuna's Certifications", page_icon="🎖️")
+st.title("🎖️ Yuna's Certifications")
 
 # Enlarge fonts globally on this page (optional)
 st.markdown(
