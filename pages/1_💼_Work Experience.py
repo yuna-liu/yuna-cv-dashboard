@@ -16,8 +16,8 @@ driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
 
 # Streamlit Page Layout
-st.set_page_config(page_title="Yuna's work experince", layout="wide", page_icon="💼")
-st.title("💼 Yuna's work experince")
+st.set_page_config(layout="wide", page_title="💼 Yuna's work experince", page_icon="💼")
+
 
 # Enlarge fonts globally on this page (optional)
 st.markdown(

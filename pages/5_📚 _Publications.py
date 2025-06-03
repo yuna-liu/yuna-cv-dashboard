@@ -2,20 +2,29 @@ import streamlit as st
 from streamlit_timeline import timeline
 import pandas as pd
 
-st.set_page_config(layout="wide", page_icon="📚")
+st.set_page_config(layout="wide", page_title = "📚 Yuna's Research Publications Timeline", page_icon="📚")
 
-# Use markdown instead of st.title to save space
-st.markdown("## 📚 Yuna's Research Publications Timeline")
 
-# Put the title and the scholar link side-by-side using columns
-col1, col2 = st.columns([3, 1])
-with col1:
-    st.markdown("### Research Publications")
-with col2:
-    st.markdown(
-        "[🔗 Full Google Scholar Profile](https://scholar.google.com/citations?user=U4i_QG8AAAAJ&hl=en)",
-        unsafe_allow_html=True,
-    )
+# Enlarge fonts globally on this page (optional)
+st.markdown(
+    """
+    <style>
+    body, p, li {
+        font-size: 18px !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Add link to full Google Scholar profile
+st.markdown(
+    "[🔗 View citations of full list on Google Scholar](https://scholar.google.com/citations?user=U4i_QG8AAAAJ&hl=en)",
+    unsafe_allow_html=True
+)
 
 # Load CSV
 df = pd.read_csv("data/citations.csv")
@@ -42,13 +51,17 @@ for _, row in df.iterrows():
 
     event = {
         "start_date": {"year": str(year), "month": "01", "day": "01"},
-        "text": {"headline": title, "text": description}
+        "text": {
+            "headline": f"<span style='font-size:0.5em'>{title}</span>",
+            "text": description
+    }
     }
 
     if journal in journal_covers:
         event["media"] = {
             "url": journal_covers[journal],
-            "caption": journal
+            "caption": f"<span style='font-size:1.5em'>{journal}</span>",
+            "alt": journal
         }
 
     events.append(event)
@@ -57,12 +70,12 @@ for _, row in df.iterrows():
 timeline_data = {
     "title": {
         "text": {
-            "headline": "",
-            "text": ""
+            "headline": "Research Publications",
+            "text": "Chronological view of my academic contributions."
         }
     },
     "events": events
 }
 
 # Display timeline
-timeline(timeline_data, height=700)  # Slightly reduced height for better fit
+timeline(timeline_data, height=800)
