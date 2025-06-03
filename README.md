@@ -37,7 +37,7 @@ Password	The password you set when creating the database
 
 Step 4:Insert Your CV Data into Neo4j
 You only need to run this once to populate the database. You can do it via python script (recommended for automation) to populate your CV graph.
-You can save it as something like insert_data.py and run:
+You can save it as something like lib/insert_data.py and run:
 
 bash
 
