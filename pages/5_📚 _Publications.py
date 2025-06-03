@@ -17,7 +17,7 @@ df = pd.read_csv("data/citations.csv")
 
 # Journal logos
 journal_covers = {
-    "Borsa Istanbul Review": "https://ars.els-cdn.com/content/image/X22148450.jpg",
+    "Borsa Istanbul Review": "https://ars.els-cdn.com/content/image/1-s2.0-S2214845020X00020-cov150h.gif",
     "Economics Letters": "https://ars.els-cdn.com/content/image/X01651765.jpg",
     "Nordic Journal of Business": "https://media.licdn.com/dms/image/v2/C4D0BAQEj1PVA6XGeGg/company-logo_200_200/company-logo_200_200/0/1630455363134?e=1754524800&v=beta&t=02IrgknLh6jKIbpz95TYimFccRmqV0crK0sg7XUf6Qs",
     "Digitala Vetenskapliga Arkivet": "https://www.umu.se/Static/img/umu-logo-left-neg-EN.svg"
