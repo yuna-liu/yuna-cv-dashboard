@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-st.set_page_config(layout="wide", page_title="Yuna's Certifications", page_icon="🎖️")
+st.set_page_config(layout="wide", page_title="Yuna's Professional Certifications", page_icon="🎖️")
 st.title("🎖️ Yuna's Certifications")
 
 # Enlarge fonts globally on this page (optional)
@@ -22,7 +22,7 @@ st.markdown(
 
 
 st.markdown("""
-This page presents an overview of professional certifications. Use this dashboard to reflect on my learning progress and skill development.
+Use this dashboard to reflect on my learning progress and skill development.
 
 You can:
 - View all my certifications in a table.
@@ -42,7 +42,7 @@ df["Expiry Date"] = pd.to_datetime(df["Expiry Date"], format="%Y-%m", errors="co
 
 st.sidebar.markdown("## 🔍 Filter Options")
 st.sidebar.markdown("""
-Use the filters below to narrow down the certifications:
+Narrow down the certifications:
 - **Issuer**
 - **Area**
 
