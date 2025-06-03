@@ -5,20 +5,6 @@ import pandas as pd
 st.set_page_config(layout="wide", page_title = "Yuna's Research Publications Timeline", page_icon="📚")
 st.title("📚 Yuna's Research Publications Timeline")
 
-# Enlarge fonts globally on this page (optional)
-st.markdown(
-    """
-    <style>
-    body, p, li {
-        font-size: 18px !important;
-    }
-    h1 {
-        font-size: 2.5rem !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
 
 # Add link to full Google Scholar profile
 st.markdown(
@@ -52,7 +38,7 @@ for _, row in df.iterrows():
     event = {
         "start_date": {"year": str(year), "month": "01", "day": "01"},
         "text": {
-            "headline": f"<span style='font-size:0.5em'>{title}</span>",
+            "headline": f"<span style='font-size:0.8em'>{title}</span>",
             "text": description
     }
     }
@@ -78,4 +64,4 @@ timeline_data = {
 }
 
 # Display timeline
-timeline(timeline_data, height=800)
+timeline(timeline_data, height=600)
