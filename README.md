@@ -36,6 +36,10 @@ Username	Usually neo4j (default)
 Password	The password you set when creating the database
 
 Step 4:Insert Your CV Data into Neo4j
+Before import, you may already have a old version which you want to remove. Go to the Neo4j instance, and run:
+MATCH (n)
+DETACH DELETE n
+
 You only need to run this once to populate the database. You can do it via python script (recommended for automation) to populate your CV graph.
 You can save it as something like lib/insert_data.py and run:
 

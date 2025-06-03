@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(layout="wide", page_title="Cortex Analyst Demo", page_icon="❄️")
+st.set_page_config(layout="wide", page_title="Cortex Analyst AI Chatbot Demo", page_icon="❄️")
 st.title("❄️ Snowflake Streamlit AI-Powered Sales Insights Demo")
 
 # Enlarge fonts globally on this page (optional)
