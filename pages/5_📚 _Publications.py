@@ -3,14 +3,19 @@ from streamlit_timeline import timeline
 import pandas as pd
 
 st.set_page_config(layout="wide", page_icon="📚")
-st.title("📚 Yuna's Research Publications Timeline")
 
+# Use markdown instead of st.title to save space
+st.markdown("## 📚 Yuna's Research Publications Timeline")
 
-# Add link to full Google Scholar profile
-st.markdown(
-    "[🔗 View citations of full list on Google Scholar](https://scholar.google.com/citations?user=U4i_QG8AAAAJ&hl=en)",
-    unsafe_allow_html=True
-)
+# Put the title and the scholar link side-by-side using columns
+col1, col2 = st.columns([3, 1])
+with col1:
+    st.markdown("### Research Publications")
+with col2:
+    st.markdown(
+        "[🔗 Full Google Scholar Profile](https://scholar.google.com/citations?user=U4i_QG8AAAAJ&hl=en)",
+        unsafe_allow_html=True,
+    )
 
 # Load CSV
 df = pd.read_csv("data/citations.csv")
@@ -52,12 +57,12 @@ for _, row in df.iterrows():
 timeline_data = {
     "title": {
         "text": {
-            "headline": "Research Publications",
-            "text": "Chronological view of my academic contributions."
+            "headline": "",
+            "text": ""
         }
     },
     "events": events
 }
 
 # Display timeline
-timeline(timeline_data, height=800)
+timeline(timeline_data, height=700)  # Slightly reduced height for better fit
