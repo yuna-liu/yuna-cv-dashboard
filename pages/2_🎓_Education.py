@@ -136,7 +136,7 @@ tooltip = {
 deck = pdk.Deck(
     layers=[icon_layer, arc_layer],
     initial_view_state=view_state,
-    map_style="mapbox://styles/mapbox/light-v9",
+    map_style=None, #"mapbox://styles/mapbox/light-v9"
     tooltip=tooltip
 )
 
