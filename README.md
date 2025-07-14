@@ -2,6 +2,9 @@
 
 Here is my cv dashboard streamlit playground
 
+Updates on 2025-07-14
+terminal run: streamlit run streamlit_app.py
+
 Updates on 2025-06-02
 
 Summary Checklist for Knowledge Graph using neoj4:
