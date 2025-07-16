@@ -35,4 +35,4 @@ From identifying top-selling models to comparing year-over-year sales performanc
 """)
 
 st.markdown("### ⚙️ Solution Architecture")
-st.image("assets/cortex_analyst.png", caption="Solution Architecture for Cortex Analyst", use_container_width=True)
+st.image("assets/cortex_analyst.png", caption="Solution Architecture for Cortex Analyst", use_container_width=400)
