@@ -4,3 +4,8 @@
 
 # Ignore environment variables
 .env
+
+.venv/
+__pycache__/
+.db/
+.lib/

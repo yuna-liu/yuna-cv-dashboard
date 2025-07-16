@@ -3,6 +3,13 @@
 Here is my cv dashboard streamlit playground
 
 Updates on 2025-07-14
+cd C:\Users\YLIU378\Projects\yuna-cv-dashboard
+python -m venv .venv --only one time to create a enviroment for this project
+
+.venv\Scripts\activate --go to this enviroment
+
+pip install -r requirements.txt
+
 terminal run: streamlit run streamlit_app.py
 
 Updates on 2025-06-02
