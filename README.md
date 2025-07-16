@@ -2,7 +2,7 @@
 
 Here is my cv dashboard streamlit playground
 Updates on 2025-07-16
-
+some thing is wrong
 
 Updates on 2025-07-14
 
