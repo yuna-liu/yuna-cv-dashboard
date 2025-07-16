@@ -24,6 +24,3 @@ python-dotenv
 
 # environment management
 virtualenv
-
-lib
-.lib/
