@@ -1,6 +1,8 @@
 # yuna-cv-dashboard
 
 Here is my cv dashboard streamlit playground
+Updates on 2025-07-16
+
 
 Updates on 2025-07-14
 
