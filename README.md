@@ -4,6 +4,12 @@ Here is my cv dashboard streamlit playground
 Updates on 2025-07-16
 some thing is wrong
 
+python -m venv .venv --only one time to create a enviroment for this project
+
+.venv\Scripts\activate --go to this enviroment
+
+pip install -r requirements.txt
+
 Updates on 2025-07-14
 
 terminal run: streamlit run streamlit_app.py
